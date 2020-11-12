@@ -1,0 +1,226 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar: 59px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+
+    position: sticky;
+    align-items: center;
+    top: 0%;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navigation Bar Logo and Image */
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+    height: 80px;
+    margin: 3px 5px;
+}
+/* List Styling */
+#navbar ul{
+    display: flex;
+    font-size: 1rem;
+}
+
+#navbar ul li{
+    /* color: white */
+    list-style: none;
+    font-size: 15px;
+}
+#navbar ul li a{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 170px;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../bg4.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+p{
+    
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#services{
+    margin: 20px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 13px 5px;
+    background-color: white;
+    border-radius: 25px;
+    
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2rem;
+    padding: 12px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.burger{
+    height: 150px;
+    width: 200px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: grey;
+    color: black;
+    margin: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: lightgrey;
+    background-color: indianred;
+}
+.text-center{
+    color: black;
+}
+.primary{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#client img{
+    height: 90px;
+    
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contact.jpg);
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+     
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+}
